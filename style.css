@@ -1,0 +1,120 @@
+body {
+    text-align: center;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+}
+
+.game {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 500px;
+    background: url(../img/background.png) center/cover;
+    border-radius: 20px;
+}
+
+.game-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-header-startBtn {
+    width: 50px;
+    height: 50px;
+    background-color: wheat;
+    border: 4px solid black;
+    font-size: 24px;
+    transition: transform 200ms ease-in;
+}
+
+.game-header-startBtn:hover {
+    transform: scale(1.1);
+}
+
+.game-header-timer {
+    width: 100px;
+    background-color: white;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 32px;
+    margin-top: 8px;
+    visibility: hidden;
+    user-select: none;
+    cursor: auto;
+}
+
+.game-header-counter {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 46px;
+    background-color: darksalmon;
+    color: white;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-top: 8px;
+    visibility: hidden;
+    user-select: none;
+    cursor: auto;
+}
+
+.game-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.pop-up {
+    width: 400px;
+    height: 120px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #00000090;
+    opacity: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transform: translateY(-150%);
+}
+
+.pop-up-hidden {
+    display: none;
+}
+
+.pop-up-reBtn {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background-color: wheat;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.pop-up-message {
+    display: block;
+    font-size: 38px;
+    color: white;
+}
+
+.carrot,
+.bug {
+    transition: transform 200ms ease-in;
+}
+
+.carrot:hover,
+.bug:hover {
+    transform: scale(1.1);
+}
