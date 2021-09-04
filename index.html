@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/414ce71283.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>protect the farm</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun Game</title>
+    <script
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="src/main.js" defer></script>
+  </head>
+  <body>
     <section class="game">
-        <header class="game-header">
-            <button class="game-header-startBtn">
-                <i class="fas fa-play"></i>
-            </button>
-            <span class="game-header-timer">0:0</span>
-            <span class="game-header-counter">0</span>
-        </header>
-        <main class="game-main"></main>
-    </section>
-    <section class="pop-up pop-up-hidden">
-        <button class="pop-up-reBtn">
-            <i class="fas fa-redo-alt"></i>
+      <header>
+        <button class="game__button">
+          <i class="fas fa-play"></i>
         </button>
-        <span class="pop-up-message">REPLAY?</span>
+        <span class="game__timer">
+          00:00
+        </span>
+        <span class="game__score">0</span>
+      </header>
+      <section class="game__field"></section>
     </section>
-    <script src="app.js"></script>
-</body>
+    <section class="pop-up hide">
+      <header>
+        <button class="pop-up__refresh">
+          <i class="fas fa-redo"></i>
+        </button>
+        <span class="pop-up__message">You have WON!!!</span>
+      </header>
+    </section>
+  </body>
 </html>
